@@ -11,7 +11,7 @@ function searchVideos(isLoadMore = false) {
     document.getElementById("videoResults").innerHTML = "";
   }
 
-  const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${encodeURIComponent(currentQuery)}&key=${API_KEY}&maxResults=50&pageToken=${nextPageToken}`;
+  const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${encodeURIComponent(currentQuery)}&key=${API_KEY}&maxResults=10&pageToken=${nextPageToken}`;
 
   fetch(url)
     .then(res => res.json())
