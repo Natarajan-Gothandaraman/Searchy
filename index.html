@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Video Search App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube Video Search</h1>
+    <h2>No more Distraction</h2>
+    <input type="text" id="searchInput" placeholder="Enter topic (e.g., how to become developer)">
+    <button onclick="searchVideos()">Search</button>
+    <div id="videoResults"></div>
+    <button id="loadMoreBtn" onclick="searchVideos(true)" style="display: none; margin-top: 20px;">Load More</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
