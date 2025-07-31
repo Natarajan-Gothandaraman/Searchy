@@ -45,3 +45,23 @@ function searchVideos(isLoadMore = false) {
     })
     .catch(err => console.error(err));
 }
+
+fetch(url)
+  .then(res => {
+    if (!res.ok) throw new Error("API error: " + res.status);
+    return res.json();
+  })
+  .then(data => {
+    if (!data.items) {
+      document.getElementById("videoResults").innerHTML = "No videos found or API error.";
+      return;
+    }
+    data.items.forEach(item => {
+      console.log(item.snippet.title);
+      // Your display logic here
+    });
+  })
+  .catch(err => {
+    console.error(err);
+    document.getElementById("videoResults").innerHTML = "Failed to fetch videos.";
+  });
