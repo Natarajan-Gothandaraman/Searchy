@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyCCIRT2MgjguaIZotK4VR7PFDKTPj_hBtQ"; // Replace with your own API key
+const API_KEY = "AIzaSyBYWdAvKHDJcj5X-VBc-Ob4tKepRx9IAk8"; // Replace with your own API key
 let nextPageToken = "";
 let currentQuery = "";
 
